@@ -19,9 +19,9 @@ The UI uses Tailwind CSS for a clean, dark theme.
 
 ## Screenshots
 
-![Home Page](screenshots/home.png)
-![Login Page](screenshots/login.png)
-![Register Page](screenshots/register.png)
+![Home Page](home.png)
+![Login Page](login.png)
+![Register Page](register.png)
 
 ---
 
