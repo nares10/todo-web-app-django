@@ -1,17 +1,106 @@
-### 📚 Topics:
+# Django Todo App with Authentication
 
-- Django Class-Based Views (CBVs)
-- Custom User Models
-- Authentication & Authorization
-- Django Messages framework
-- File uploads
-- Django Signals
-- Working with external APIs
-- Django REST Framework (DRF) basics
-- Pagination, filtering, and serializers
+A simple, modern Todo web application built with Django.  
+Each user can register, log in, and manage their own personal todo list.  
+The UI uses Tailwind CSS for a clean, dark theme.
 
-### 🛠️ Milestone Project:
+---
 
-**To-Do App with User Auth and REST API**
+## Features
 
-Bonus: Build a **frontend using React or Vue** and connect with the Django backend.
+- User registration, login, and logout
+- Each user has their own todo list
+- Add new tasks (blank tasks not allowed)
+- Toggle tasks as completed/incomplete
+- Responsive, dark-themed UI with Tailwind CSS
+- Error messages for invalid actions (e.g., blank task, duplicate username, invalid login)
+
+---
+
+## Screenshots
+
+![Home Page](screenshots/home.png)
+![Login Page](screenshots/login.png)
+![Register Page](screenshots/register.png)
+
+---
+
+## Getting Started
+
+### 1. Clone the repository
+
+```sh
+git clone https://github.com/<your-username>/<repo-name>.git
+cd todo-app-auth
+```
+
+### 2. Create and activate a virtual environment
+
+```sh
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
+
+### 3. Install dependencies
+
+```sh
+pip install django
+```
+
+### 4. Apply migrations
+
+```sh
+python manage.py migrate
+```
+
+### 5. Run the development server
+
+```sh
+python manage.py runserver
+```
+
+Visit [http://127.0.0.1:8000/](http://127.0.0.1:8000/) in your browser.
+
+---
+
+## Project Structure
+
+```
+todo-app-auth/
+├── todo/                # Django project settings
+├── todoapp/             # Main app (models, views, urls, templates)
+│   ├── templates/
+│   │   └── todoapp/
+│   │       ├── home.html
+│   │       ├── login.html
+│   │       └── register.html
+│   ├── models.py
+│   ├── views.py
+│   └── urls.py
+├── manage.py
+└── README.md
+```
+
+---
+
+## Customization
+
+- **UI**: Edit Tailwind classes in the HTML templates for your own style.
+- **Features**: Add more fields (e.g., due date, priority) in `models.py`.
+
+---
+
+## License
+
+This project is licensed under the MIT License.
+
+---
+
+## Credits
+
+- [Django](https://www.djangoproject.com/)
+- [Tailwind CSS](https://tailwindcss.com/)
+
+---
+
+**Happy coding!**
